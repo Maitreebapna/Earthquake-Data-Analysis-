@@ -48,6 +48,3 @@ Make sure you have the following installed:
   MySQL Server
 
 
-_**How to Run the Project**__
-1. Clone the repository
-  git clone <your-repository-link>
