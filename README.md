@@ -1,45 +1,69 @@
 # Earthquake Data Analysis Using Python and MySQL
 
-**Technologies Used**
-- Python
-- Pandas
-- MySQL
-- MySQL Connector
-- Matplotlib
-  
-**Project Structure**
+## Description
+This project focuses on analyzing earthquake data by storing it in a MySQL database and performing statistical analysis and visualizations using Python. The project helps in understanding earthquake patterns based on magnitude, depth, and yearly occurrences.
+
+---
+
+## Technologies Used
+- Python  
+- Pandas  
+- MySQL  
+- MySQL Connector  
+- Matplotlib  
+
+---
+
+## Project Structure
 Earthquake-Data-Analysis/
 │
-├── database.csv        # Raw earthquake dataset
-├── config.py           # Database configuration
-├── db_setup.py         # Database creation and data insertion
-├── data_analysis.py    # Data analysis and visualization
+├── database.csv 
+├── config.py 
+├── db_setup.py 
+├── data_analysis.py 
 └── README.md
 
-**How the Project Works**
-1. Earthquake data is read from a CSV file.
-2. Cleaned data is inserted into a MySQL database.
-3. Data is retrieved using SQL queries.
-4. Statistical analysis is performed on depth and magnitude.
-5. Visualizations are generated to identify trends.
+---
 
-**Setup Instructions**
-Step 1: Install Required Libraries
- pip install pandas mysql-connector-python matplotlib
-Step 2: Create Database in MySQL
+## How the Project Works
+1. Earthquake data is read from a CSV file.
+2. Data is cleaned using Pandas.
+3. Cleaned data is inserted into a MySQL database.
+4. Data is retrieved using SQL queries.
+5. Statistical analysis is performed on earthquake depth and magnitude.
+6. Visualizations are generated to identify trends and patterns.
+
+---
+
+## Setup and Installation
+
+### 1. Clone the Repository
+```bash
+git clone https://github.com/Maitreebapna/Earthquake-Data-Analysis.git
+cd Earthquake-Data-Analysis
+
+### 2. Install Required Libraries
+Make sure Python is installed on your system. Then install the required Python libraries using pip:
+
+```bash
+pip install pandas mysql-connector-python matplotlib
+
+### 3.Create Database in MySQL
 CREATE DATABASE earthquake_db;
-Step 3: Update Database Credentials
-Edit config.py and update:
-host
-user
-password
-database
-Step 4: Run Database Setup Script
+
+### 4. Configuration
+db_config = {
+    'host': 'localhost',
+    'user': 'your_username',  # Replace with your MySQL username
+    'password': 'your_password',  # Replace with your MySQL password
+    'database': 'earthquake_db'
+}
+
+### 5. Initialization
 python db_setup.py
-Step 5: Run Data Analysis
+
+### 6. Execution
 python data_analysis.py
 
 
 
-
- 
